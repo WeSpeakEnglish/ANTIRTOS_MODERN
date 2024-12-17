@@ -6,7 +6,7 @@ ANTIRTOS is an ultra-lightweight, universal C++ library designed for task manage
 It is developed especially for embedded systems where the complexity and overhead of an RTOS are not justified.
 
 **This modern branch enhances simplicity in usage by leveraging the standard library (std). However, it is not supported on some platforms yet.**
-If you prefer not to use the standard library, or if your platform does not support it, consider using the [main branch](https://github.com/WeSpeakEnglish/ANTIRTOS)
+If you prefer not to use the standard library, or if your platform does not support it, consider using the [ANTIRTOS](https://github.com/WeSpeakEnglish/ANTIRTOS)
 
 ### Benifits:
 1.	Interrupts kept fast and controllable, no blocking anymore.
