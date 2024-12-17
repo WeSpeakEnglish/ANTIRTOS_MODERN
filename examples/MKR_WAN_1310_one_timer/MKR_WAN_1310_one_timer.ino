@@ -41,17 +41,7 @@ void TimerHandler(void)
   ISR_Timer.run();
 }
 
-class testClass
-{ // it is not used here, just like example how you may pass complex argument to your functions in
-  // queue
-public:
-  int array[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-  float argument = 0.0;
-};
-
-antirtos::TaskQ<10, uint32_t> F1();
-antirtos::TaskQ<10, testClass> F2(); // it is not used here, just like example how you may pass
-                                     // complex argument to your functions in queue
+antirtos::TaskQ<10, uint32_t> F1;
 
 void printMessage1(
     uint32_t milliseconds) // ISR function excutes when push button at pinD2 is pressed

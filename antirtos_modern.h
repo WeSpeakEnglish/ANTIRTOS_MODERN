@@ -1,3 +1,4 @@
+// under MIT license, Aleksei Tertychnyi
 #ifndef _antirtos_h
 #define _antirtos_h
 #include <cstddef>

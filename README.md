@@ -5,6 +5,9 @@
 ANTIRTOS is an ultra-lightweight, universal C++ library designed for task management in IoT and embedded applications. It is coded in a single, small file, making it incredibly easy to integrate into your projects. ANTIRTOS aims to deliver a robust, secure, and efficient library for task management. With its focus on modularity and scalability, ANTIRTOS is suitable for a variety of devices, from simple microcontrollers to complex embedded systems.
 It is developed especially for embedded systems where the complexity and overhead of an RTOS are not justified.
 
+**This modern branch enhances simplicity in usage by leveraging the standard library (std). However, it is not supported on some platforms yet.**
+If you prefer not to use the standard library, or if your platform does not support it, consider using the [main branch](https://github.com/WeSpeakEnglish/ANTIRTOS)
+
 ### Benifits:
 1.	Interrupts kept fast and controllable, no blocking anymore.
 2.	Easy to debug and understand. 
@@ -19,7 +22,7 @@ Allow your MCU to perform many tasks while using a very small amount of microcon
 
 0. To start using the library - include the header:
 ```cpp
-#include <antirtos.h>
+#include <antirtos_modern.h>
 ```
 
 1.	Create queues in an easy way
@@ -160,7 +163,6 @@ put where you want (here example of 2 functions put into queue):
    ```cpp
   F5.revoke(yourTask); // revoke function (all of the same if there are several of them) from the F5 queue
   ```
-Kindly find an example of usage revocation on [Wokwi](https://wokwi.com/projects/411101121732784129)!
 
 That's it. Enjoy! 
  
@@ -173,5 +175,5 @@ You even may improve your job by dividing all your functions into "weight" group
 3.	Execute the fastest functions instead of waiting inside of the middle functions.
 4.	Use the medium and fast pulls for waiting inside of slow procedures.
 
-Try it on [Wokwi](https://wokwi.com/projects/410932957331738625)!
+
 
