@@ -99,7 +99,7 @@ val = analogRead(3);  		// read the input pin
 ```
 
 
-If you need to pass several arguments – no problem, you may them in the same manner:
+If you need to pass several arguments – no problem, you may specify them in the following manner:
 ```cpp
 antirtos::TaskQ<10, int, float, char> F2;
 
